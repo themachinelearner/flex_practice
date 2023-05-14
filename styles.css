@@ -26,6 +26,8 @@ body > div {
 
 .header-logo {
     margin-right: auto;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 .footer {
@@ -59,6 +61,11 @@ body > div {
     margin: 0;
 }
 
+.content-sign-up-left p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .content-sign-up-right {
     flex: 0 0 auto;
     width: 400px;
@@ -78,7 +85,7 @@ body > div {
     background-color: #3882F6;
     border-radius: 5px;
     color: white;
-    padding: 5px 30px;
+    padding: 10px 30px;
     border: none;
 }
 
