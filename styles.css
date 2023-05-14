@@ -6,7 +6,7 @@ body {
 }
 
 body > div {
-    padding: 0 100px;
+    padding: 0 200px;
 }
 
 .header, .footer {
@@ -39,6 +39,8 @@ body > div {
     gap: 40px;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .content-sign-up-left {
@@ -72,24 +74,117 @@ body > div {
     flex: 1;
 }
 
-.content-sign-up-left button {
+.content-sign-up-left button, .call-to-action-box button {
     background-color: #3882F6;
     border-radius: 5px;
     color: white;
-    padding: 5px 20px;
+    padding: 5px 30px;
     border: none;
 }
 
-.content-quote {
-    background-color: #E5E7EB;
-    flex: 1;
+.call-to-action-box button {
+    border: 1px solid white;
 }
 
-.content-grid, .content-call-to-action {
+.content-quote-outer {
+    background-color: #E5E7EB;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.content-quote-inner {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-quote-inner .quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+}
+
+.content-quote-inner .attribution {
+    font-size: 18px;
+    color: #1F2937;
+    font-weight: 800;
+    align-self: flex-end; 
+    margin: 0;
 }
 
 .content-grid {
+    flex: 1;
+    text-align: center;
+    padding: 50px 300px;
+}
+
+.content-grid-items {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
     text-align: center;
 }
 
+.grid-item {
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #3882F6;
+}
+
+.content-grid h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+.content-call-to-action {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.call-to-action-box {
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: white;
+    flex: 1 1 auto;
+    display: flex;
+    padding: 40px 80px;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-box-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.call-to-action-box-left h2, .call-to-action-box-left p {
+    margin: 0;
+}
+
+.call-to-action-box-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
