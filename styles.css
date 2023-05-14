@@ -6,17 +6,17 @@ body {
 }
 
 body > div {
-    padding: 0 200px;
+    padding: 0 10vw;
 }
 
 .header, .footer {
-    height: 50px;
+    height: 100px;
     flex-shrink: 0;
     display: flex;
-    align-items: center;
     color: white;
     background-color: #1F2937;
     gap: 25px;
+    align-items: center;
 }
 
 .header a {
@@ -34,39 +34,38 @@ body > div {
     justify-content: center;
 }
 
-.content-sign-up {
+.main {
     background-color: #1F2937;
     flex: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     gap: 40px;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
-.content-sign-up-left {
-    display: flex;
-    flex-direction: column;
+.main .left {
     color: white;
-    align-items: start;
     flex: 1;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
-.content-sign-up-left h1 {
+.main .left h1 {
     font-size: 48px;
     font-weight: 800;
-    color: #F9FAF8;
     margin: 0;
 }
 
-.content-sign-up-left p {
+.main .left p {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.content-sign-up-right {
+.main .right {
     flex: 0 0 auto;
     width: 400px;
     height: 200px;
@@ -77,11 +76,11 @@ body > div {
     text-align: center;
 }
 
-.content-sign-up-right span {
+.main .right span {
     flex: 1;
 }
 
-.content-sign-up-left button, .call-to-action-box button {
+.main .left button, .call-to-action-box button {
     background-color: #3882F6;
     border-radius: 5px;
     color: white;
@@ -93,7 +92,7 @@ body > div {
     border: 1px solid white;
 }
 
-.content-quote-outer {
+.quote-section-outer {
     background-color: #E5E7EB;
     flex: 1;
     display: flex;
@@ -101,20 +100,20 @@ body > div {
     padding: 50px 0;
 }
 
-.content-quote-inner {
+.quote-section-inner {
     max-width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.content-quote-inner .quote {
+.quote {
     font-size: 36px;
     color: #1F2937;
     font-weight: 300;
 }
 
-.content-quote-inner .attribution {
+.attribution {
     font-size: 18px;
     color: #1F2937;
     font-weight: 800;
@@ -122,13 +121,13 @@ body > div {
     margin: 0;
 }
 
-.content-grid {
+.grid-section {
     flex: 1;
     text-align: center;
     padding: 50px 300px;
 }
 
-.content-grid-items {
+.grid-items {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -150,13 +149,13 @@ body > div {
     border: 1px solid #3882F6;
 }
 
-.content-grid h2 {
+.grid-section h2 {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
 }
 
-.content-call-to-action {
+.call-to-action {
     flex:1;
     display: flex;
     justify-content: center;
@@ -177,7 +176,7 @@ body > div {
     align-items: center;
 }
 
-.call-to-action-box-left {
+.call-to-action-box .left {
     flex: 1;
     display: flex;
     justify-content: flex-start;
@@ -185,11 +184,11 @@ body > div {
     flex-direction: column;
 }
 
-.call-to-action-box-left h2, .call-to-action-box-left p {
+.call-to-action-box .left h2, .call-to-action-box .left p {
     margin: 0;
 }
 
-.call-to-action-box-right {
+.call-to-action-box .right {
     flex: 1;
     display: flex;
     justify-content: center;
